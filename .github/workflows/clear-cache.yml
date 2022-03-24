@@ -2,6 +2,7 @@ name: Clean Camo Cache
 
 on: 
   push:
+    branches: [ master ]
   schedule:
     - cron: "*/30 * * * *" 
 
