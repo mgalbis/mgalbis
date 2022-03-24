@@ -2,6 +2,8 @@ name: Clean Camo Cache
 
 on: 
   push:
+  schedule:
+    - cron: "*/30 * * * *" 
 
 jobs:
   build:
