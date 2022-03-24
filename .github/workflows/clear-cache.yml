@@ -1,4 +1,4 @@
-name: Greetings
+name: Clean Camo Cache
 
 on: 
   push:
@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Clean Camo Cache
+    - name: clean
       run: |
         README_TMP=readme.html
         curl -s https://github.com/${GITHUB_REPOSITORY}/blob/master/README.md > $(README_TMP)
