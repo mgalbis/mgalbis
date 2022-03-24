@@ -12,10 +12,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
     - name: clean
       run: |
         README_TMP=readme.html
         curl -s https://github.com/${GITHUB_REPOSITORY}/blob/master/README.md > ${README_TMP}
-        grep -Eo '<img src="[^"]+"' ${README_TMP} | grep camo | grep -Eo 'https[^"]+' | xargs -I {} curl -w "\n" -s -X PURGE {}
+        URL=$(grep -Eo '<img src="[^"]+"' ${README_TMP} | grep camo | grep -Eo 'https[^"]+')
+        echo ${URL}
+        curl -w "\n" -s -X PURGE ${URL}
 
