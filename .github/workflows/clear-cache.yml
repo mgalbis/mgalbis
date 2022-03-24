@@ -2,7 +2,6 @@ name: Clean Camo Cache
 
 on: 
   push:
-    branches: [ master ]
   schedule:
     - cron: "*/30 * * * *" 
 
@@ -10,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: clean
       run: |
         README_TMP=readme.html
