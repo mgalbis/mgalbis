@@ -1,2 +1,3 @@
-
-![Top Langs](https://github-readme-stats.fast.app/api/top-langs/?username=mgalbis&layout=compact&title_color=000&langs_count=6&hide_border=true&cache_seconds=1800?)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=mgalbis&show_icons=true&theme=nord)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/streak?username=mgalbis&theme=nord)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=mgalbis&layout=compact&theme=nord)
